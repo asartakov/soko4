@@ -1,0 +1,25 @@
+#!/bin/bash
+
+TOP_DIR=$HOME/BUILD_ROOT
+rm -rf $TOP_DIR
+mkdir -p $TOP_DIR/SOURCES
+mkdir -p $TOP_DIR/SPECS
+mkdir -p $TOP_DIR/BUILD/RPMS
+mkdir -p $TOP_DIR/SRPMS
+mkdir -p $TOP_DIR/RPMS
+
+cp rpm/soko4.spec $TOP_DIR/SPECS
+
+DIR1=soko4-1.0.0
+
+SRC_TGZ=${DIR1}.tar.gz
+mkdir $DIR1
+cp -r soko4.pro $DIR1
+cp -r themes    $DIR1
+cp -r src       $DIR1
+cp -r pixmaps   $DIR1
+cp -r levels    $DIR1
+cp -r doc       $DIR1
+tar -czf $DIR1.tar.gz $DIR1
+mv $DIR1.tar.gz $TOP_DIR/SOURCES/.
+rpmbuild -bb $TOP_DIR/SPECS/soko4.spec

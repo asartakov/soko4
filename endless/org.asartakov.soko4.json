@@ -1,0 +1,54 @@
+{
+    "app-id": "org.asartakov.soko4",
+    "command": "soko4",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.11",
+    "sdk": "org.kde.Sdk",
+    "finish-args": ["--share=ipc", "--socket=x11", "--socket=wayland",
+      "--filesystem=home"
+    ],
+    "modules": [
+        {
+            "name": "soko4",
+            "buildsystem": "simple",
+            "build-commands": [
+              "qmake soko4.pro",
+              "ls -l Makefile",
+              "make",
+              "install -D bin/soko4 /app/bin/soko4",
+              "install -D -m644 levels/default.txt /app/levels/default.txt",
+              "install -D -m644 themes/ksokoban/00000001.png /app/themes/ksokoban/00000001.png",
+              "install -D -m644 themes/ksokoban/00000002.png /app/themes/ksokoban/00000002.png",
+              "install -D -m644 themes/ksokoban/00000003.png /app/themes/ksokoban/00000003.png",
+              "install -D -m644 themes/ksokoban/00000004.png /app/themes/ksokoban/00000004.png",
+              "install -D -m644 themes/ksokoban/00000005.png /app/themes/ksokoban/00000005.png",
+              "install -D -m644 themes/ksokoban/00000006.png /app/themes/ksokoban/00000006.png",
+              "install -D -m644 themes/ksokoban/00000007.png /app/themes/ksokoban/00000007.png",
+              "install -D -m644 themes/ksokoban/00000008.png /app/themes/ksokoban/00000008.png",
+              "install -D -m644 themes/ksokoban/00000018.png /app/themes/ksokoban/00000018.png",
+              "install -D -m644 themes/ksokoban/00000028.png /app/themes/ksokoban/00000028.png",
+              "install -D -m644 themes/ksokoban/00000038.png /app/themes/ksokoban/00000038.png",
+              "install -D -m644 themes/ksokoban/00000048.png /app/themes/ksokoban/00000048.png",
+              "install -D -m644 themes/ksokoban/00000058.png /app/themes/ksokoban/00000058.png",
+              "install -D -m644 themes/ksokoban/00000068.png /app/themes/ksokoban/00000068.png",
+              "install -D -m644 themes/ksokoban/00000108.png /app/themes/ksokoban/00000108.png",
+              "install -D -m644 themes/ksokoban/00000208.png /app/themes/ksokoban/00000208.png",
+              "install -D -m644 themes/ksokoban/00000308.png /app/themes/ksokoban/00000308.png",
+              "install -D -m644 themes/ksokoban/00000408.png /app/themes/ksokoban/00000408.png",
+              "install -D -m644 pixmaps/hi128-app-ksokoban.png /app/share/icons/hicolor/128x128/apps/org.asartakov.soko4.png",
+              "install -D -m644 pixmaps/hi64-app-ksokoban.png /app/share/icons/hicolor/64x64/apps/org.asartakov.soko4.png",
+              "install -D -m644 pixmaps/hi48-app-ksokoban.png /app/share/icons/hicolor/48x48/apps/org.asartakov.soko4.png",
+              "install -D -m644 pixmaps/hi32-app-ksokoban.png /app/share/icons/hicolor/32x32/apps/org.asartakov.soko4.png",
+              "install -D -m644 pixmaps/hi22-app-ksokoban.png /app/share/icons/hicolor/22x22/apps/org.asartakov.soko4.png",
+              "install -D -m644 pixmaps/hi16-app-ksokoban.png /app/share/icons/hicolor/16x16/apps/org.asartakov.soko4.png",
+              "install -D -m755 endless/soko4.desktop /app/share/applications/org.asartakov.soko4.desktop"
+            ],
+            "sources": [
+                {
+                    "type": "svn",
+                    "url": "svn+athlon://snz.snz/soko4/branches/DEV02"
+                }
+            ]
+        }
+    ]
+}

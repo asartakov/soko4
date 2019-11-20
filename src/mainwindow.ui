@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Soko4</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <addaction name="actionLoad_levels"/>
+    <addaction name="actionNext_level"/>
+    <addaction name="actionPrevious_level"/>
+    <addaction name="actionRestart_level"/>
+    <addaction name="actionLevel_collection"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionResolve"/>
+    <addaction name="separator"/>
+    <addaction name="actionThemes"/>
+    <addaction name="actionText_window"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAnimation">
+    <property name="title">
+     <string>Animation</string>
+    </property>
+    <addaction name="actionSlow"/>
+    <addaction name="actionMedium"/>
+    <addaction name="actionFast"/>
+    <addaction name="actionOff"/>
+   </widget>
+   <widget class="QMenu" name="menuBookmarks">
+    <property name="title">
+     <string>Bookmarks</string>
+    </property>
+    <addaction name="actionSet_bookmark"/>
+    <addaction name="actionGo_to_bookmark"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionSoko4_handbook"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout_soko4"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuAnimation"/>
+   <addaction name="menuBookmarks"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_levels">
+   <property name="text">
+    <string>Load levels...</string>
+   </property>
+  </action>
+  <action name="actionNext_level">
+   <property name="text">
+    <string>Next level</string>
+   </property>
+  </action>
+  <action name="actionPrevious_level">
+   <property name="text">
+    <string>Previous level</string>
+   </property>
+  </action>
+  <action name="actionRestart_level">
+   <property name="text">
+    <string>Restart level</string>
+   </property>
+  </action>
+  <action name="actionLevel_collection">
+   <property name="text">
+    <string>Level collection</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionSlow">
+   <property name="text">
+    <string>Slow</string>
+   </property>
+  </action>
+  <action name="actionMedium">
+   <property name="text">
+    <string>Medium</string>
+   </property>
+  </action>
+  <action name="actionFast">
+   <property name="text">
+    <string>Fast</string>
+   </property>
+  </action>
+  <action name="actionOff">
+   <property name="text">
+    <string>Off</string>
+   </property>
+  </action>
+  <action name="actionSet_bookmark">
+   <property name="text">
+    <string>Set bookmark</string>
+   </property>
+  </action>
+  <action name="actionGo_to_bookmark">
+   <property name="text">
+    <string>Go to bookmark</string>
+   </property>
+  </action>
+  <action name="actionSoko4_handbook">
+   <property name="text">
+    <string>Soko4 handbook</string>
+   </property>
+  </action>
+  <action name="actionAbout_soko4">
+   <property name="text">
+    <string>About soko4</string>
+   </property>
+  </action>
+  <action name="actionThemes">
+   <property name="text">
+    <string>Themes</string>
+   </property>
+  </action>
+  <action name="actionText_window">
+   <property name="text">
+    <string>Text window</string>
+   </property>
+  </action>
+  <action name="actionResolve">
+   <property name="text">
+    <string>Resolve</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

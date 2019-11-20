@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=soko4
+Exec=soko4
+Terminal=false
+StartupNotify=true
+Icon=org.asartakov.soko4
+Categories=Qt;KDE;Game;ArcadeGame;
